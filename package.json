@@ -1,0 +1,16 @@
+{
+  "name": "javascript-uzduotys",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "console": "nodemon ./js/console.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Modestas (https://github.com/MAndrulis)",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
