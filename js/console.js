@@ -118,7 +118,7 @@ console.log(empty1());
 // Funkcija pavadinimu “daugyba”:
 // priima du skaičiaus tipo kintamuosius
 // atskirame kintamajame įsimena sandaugos reikšmę
-// gražina saudaugos rezultatą
+// gražina sandaugos rezultatą
 // TESTAI:
 // console.log( daugyba( skaicius1, skaicius2 ) );
 // console.log( daugyba( skaicius3, skaicius2 ) );
@@ -129,6 +129,17 @@ console.log(empty1());
 
 console.clear();
 
+function daugyba(skaicius1, skaicius2, ) {
+    return  skaicius1 * skaicius2 ;
+}
+
+const skaicius1 = 5;
+const skaicius2 = 7;
+const skaicius3 = 9;
+
+console.log( daugyba( skaicius1, skaicius2 ) );
+console.log( daugyba( skaicius3, skaicius2 ) );
+console.log( daugyba( skaicius1, skaicius3 ) );
 
 
 
