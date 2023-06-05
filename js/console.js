@@ -16,7 +16,6 @@ const c = 8;
 console.log(a, b, c);
 
 // 2
-
 const zodis1 = 'Audi';
 const zodis2 = 'Juoda';
 const zodis3 = 'Kava';
@@ -25,7 +24,6 @@ console.log(zodis2);
 console.log(zodis3);
 
 // 3
-
 const skaiciai = [1, 2, 3, 4, 5];
 const skaiciai1= [10, 11, 12, 13, 14];
 const skaiciai2 = [21, 22, 23, 24, 25];
@@ -33,7 +31,6 @@ const skaiciai2 = [21, 22, 23, 24, 25];
 console.log(skaiciai,skaiciai1, skaiciai2,);
 
 // 4
-
 const zodziai1 = ['Jonas', 'Antanas', 'Ona', 'Maryte', 'Algis'];
 const zodziai2 = ['Spurga', 'Duona', 'Batonas', 'Bandelė', 'Kibinas'];
 const zodziai3 = ['Agrastas', 'Braskes', 'Serbentai', 'Melynes', 'Avietes'];
@@ -55,19 +52,16 @@ console.clear();
 // taip, jog tarp jų būtų kablelis ir tarpas
 
 // 5
-
 const s = a + b + c;
 
 console.log(s);
 
 // 6 
-
 const sujungti = `${zodis1} ${zodis2} ${zodis3}`;
 
 console.log(sujungti);
 
 //7
-
 const skaiciai11 = [1, 2, 3, 4, 5];
 const skaiciai22 = [10, 11, 12, 13, 14];
 const skaiciai33 = [21, 22, 23, 24, 25];
@@ -81,7 +75,6 @@ console.log(apskaiciuoti1);
 console.log(apskaiciuoti2);
 
 //8
-
 const zodziai11 = ['Jonas', 'Antanas', 'Ona', 'Maryte', 'Algis'];
 const zodziai22 = ['Spurga', 'Duona', 'Batonas', 'Bandelė', 'Kibinas'];
 const zodziai33 = ['Agrastas', 'Braskes', 'Serbentai', 'Melynes', 'Avietes'];
@@ -99,8 +92,8 @@ console.log(jungtis);
 // TESTAS:
 // console.log( tusciaFunkcija() );
 // rezultatas: false
-// 9
 
+// 9
 console.clear();
 
 function empty(){
@@ -126,7 +119,6 @@ console.log(empty1());
 // rezultatas: teisingos reikšmės;
 
 // 10
-
 console.clear();
 
 function daugyba(skaicius1, skaicius2, ) {
