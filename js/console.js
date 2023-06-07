@@ -202,4 +202,5 @@ pvz.: “abcdef” -> “fedcba”*/
 
  console.log(back(text));
 
+console.clear();
 
