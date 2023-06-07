@@ -134,4 +134,72 @@ console.log( daugyba( skaicius3, skaicius2 ) );
 console.log( daugyba( skaicius1, skaicius3 ) );
 
 
+// Ciklo for panaudojimas
+
+/*Suskaičiuoti ką gausime susumavus skaičius intervale tarp (imtinai):
+0 … 0
+0 … 4
+0 … 100
+574 … 815
+-50 … 50
+-70 … 30*/
+
+let start = 574;
+let end = 815;
+
+let intervale = 0;
+
+for (let i = 0; i <= end; i++) {
+    intervale += 1;    
+}
+
+console.log(intervale);
+
+
+/*Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai:
+0 - 11
+8 - 31
+-18 - 18
+rezultatą pateikti tokiu formatu:
+Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra 4 vienetai.
+Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 5 yra 3 vienetai.
+Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 7 yra 2 vienetai.
+*/
+
+let start1 = 0;
+let end1 = 11;
+
+let skaicius = 7;
+let beLiekanos = 0;
+
+let intervalas = (start1, end, skaicius) => {
+     for(let i = start; i <= end; i++){
+         if(i % skaicius === 0){
+             beLiekanos++;
+            }
+        } return `Skaičių intervale tarp ${start1} ir ${end1}, besidalijančių be liekanos iš ${skaicius} yra ${beLiekanos} vienetai.`;
+    }
+ console.log(intervalas(start1, end1, skaicius));
+
+
+console.clear();
+
+/* panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo:
+pvz.: “abcdef” -> “fedcba”*/
+
+
+ let text = 'abcdef';
+
+ let back = (text) => {
+  let arejus = text.split('');
+ let naujasTekstas = '';
+
+ for (let i = arejus.length - 1; i >= 0; i--){
+     naujasTekstas += arejus[i];
+    }
+     return naujasTekstas;
+}
+
+ console.log(back(text));
+
 
