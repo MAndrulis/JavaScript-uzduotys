@@ -1,5 +1,4 @@
 
-
 // Sukurti 3 kintamuosius su skaičiaus tipo reikšmėmis
 // Po kiekvieno jų inicijavimo, išvesti į console
 // Sukurti 3 kintamuosius su teksto tipo reikšmėmis
@@ -202,5 +201,88 @@ pvz.: “abcdef” -> “fedcba”*/
 
  console.log(back(text));
 
-console.clear();
+//priima du skaičiaus tipo kintamuosius
+//atskirame kintamajame įsimena sandaugos reikšmę
+//gražina saudaugos rezultatą
+
+/*TESTAI:
+console.log( daugyba( skaicius1, skaicius2 ) );
+console.log( daugyba( skaicius3, skaicius2 ) );
+console.log( daugyba( skaicius1, skaicius3 ) );
+rezultatas: teisingos reikšmės;*/
+
+function daugyba(skaicius1, skaicius2, ) {
+    return  skaicius1 * skaicius2 ;
+  }
+  
+  const skaicius1 = 5;
+  const skaicius2 = 7;
+  const skaicius3 = 8;
+  
+  console.log( daugyba( skaicius1, skaicius2 ) );
+  console.log( daugyba( skaicius3, skaicius2 ) );
+  console.log( daugyba( skaicius1, skaicius3 ) );
+  console.log('-----------------------');
+  //Funkcija pavadinimu “skaitmenuKiekisSkaiciuje”:
+  //priima vieną kintamąjį
+  //jei perduotas kintamasis nėra skaičiaus tipo, tai išveda pranešimą “Pateikta netinkamo tipo reikšmė.”
+  //priešingu atveju, funkcija tęsia darbą
+  //į atskirą kintamąjį įsimena skaičių sudarančių skaitmenų kiekį
+  //gražina skaitmenų kiekį
+  /*console.log( skaitmenuKiekisSkaiciuje( 5 ) );
+  rezultatas: 1
+  console.log( skaitmenuKiekisSkaiciuje( 781 ) );
+  rezultatas: 3
+  console.log( skaitmenuKiekisSkaiciuje( 37060123456 ) );
+  rezultatas: 11
+  console.log( skaitmenuKiekisSkaiciuje( true ) ); */
+  
+  
+  function skaitmenuKiekisSkaiciuje(a) {
+    if (typeof a !== 10) {
+      return 'Pateikta netinkamo tipo reikšmė.';
+    }
+  }
+  
+  const a = 10;
+  
+   console.log(skaitmenuKiekisSkaiciuje(5));
+   console.log( skaitmenuKiekisSkaiciuje( 781 ) );
+   console.log( skaitmenuKiekisSkaiciuje( 37060123456 ) );
+   console.log( skaitmenuKiekisSkaiciuje( true ) ); 
+  
+  
+  
+   /* 6. Funkcija pavadinimu “dalyba”:
+  turi priimti du kintamuosius
+  reikia sugalvoti ir įgyvendinti kuo daugiau logiškų patikrinimų, kurie padėtų apsaugoti funkciją nuo neteisingo panaudojimo
+  esant blogoms sąlygoms, išvesti atitinkamą pranešimą
+  esant geroms - tęsti darbą
+  į atskirą kintamąjį išsaugoti apskaičiuotą dviejų skaičių dalybos reikšmę
+  daliname pirmąjį skaičių iš antrojo
+  grąžinti suskaičiuotą reikšmę
+  TESTAI:
+  sugalvoti bent 5 testus, kurie bendrai iš esmės patvirtintu gerą funkcijos veikimą*/
+  
+  function dalyba(a, b) {
+    if (typeof a !== 'number' || !isFinite(a)) {
+        return 'ERROR: pirmas parametras privalo buti normalus skaicius.';
+    }
+  
+    if (typeof b !== 'number' || !isFinite(b)) {
+        return 'ERROR: antras parametras privalo buti normalus skaicius.';
+    }
+  
+    const rez = a / b;
+    return rez;
+  }
+  
+  console.log('##################');
+  console.log(dalyba(63, 9));
+  console.log(dalyba(`labas`, 5));
+  console.log(dalyba(true, 11));
+  console.log(dalyba(47, NaN));
+  console.log(dalyba(-15, true));
+  console.log(dalyba(64, 8));
+
 
