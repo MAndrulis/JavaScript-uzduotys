@@ -5,6 +5,10 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "dalyba": "nodemon ./js/dalyba.js",
+    "didziausiasSkaicius": "nodemon ./js/didziausiasSkaicius.js",
+    "isrinktiRaides": "nodemon ./js/isrinktiRaides.js",
+    "bandymo": "nodemon ./js/bandymo.js",
     "console": "nodemon ./js/console.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
